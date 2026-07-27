@@ -1,0 +1,2463 @@
+<!DOCTYPE html>
+<html lang="zh-CN" class="" data-trae-theme="light"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>天下秀望京办公区入驻仪式执行方案</title>
+
+  <style>
+    :root {
+      --bg: #fffdfa;
+      --bg2: #fff7ed;
+      --bg3: #ffedd5;
+      --ink: #1c1917;
+      --ink-soft: #44403c;
+      --muted: #78716c;
+      --rule: #fed7aa;
+      --accent: #ea580c;
+      --accent-dark: #c2410c;
+      --accent2: #f97316;
+      --accent-light: #fed7aa;
+      --gold: #d97706;
+      --gold-light: #fef3c7;
+      --orange-bright: #fb923c;
+      --green: #16a34a;
+      --green-light: #dcfce7;
+      --blue: #2563eb;
+      --blue-light: #dbeafe;
+      --red: #dc2626;
+      --red-light: #fee2e2;
+      --font: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+      --max: 1080px;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { font-size: 15px; scroll-behavior: smooth; }
+    body {
+      font-family: var(--font);
+      color: var(--ink);
+      background: var(--bg);
+      line-height: 1.7;
+      padding: 0;
+    }
+
+    /* 封面 */
+    .doc-cover {
+      background: linear-gradient(135deg, #ea580c 0%, #f97316 35%, #fb923c 70%, #fdba74 100%);
+      color: white;
+      padding: 5rem 2rem 4rem;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .doc-cover::before {
+      content: "";
+      position: absolute;
+      top: -10%;
+      right: -5%;
+      width: 500px;
+      height: 500px;
+      background: radial-gradient(circle, rgba(255,255,255,0.15) 0%, transparent 60%);
+      border-radius: 50%;
+    }
+    .doc-cover::after {
+      content: "";
+      position: absolute;
+      bottom: -20%;
+      left: -5%;
+      width: 400px;
+      height: 400px;
+      background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 60%);
+      border-radius: 50%;
+    }
+    .doc-cover .brand-bar {
+      display: inline-block;
+      background: rgba(255,255,255,0.2);
+      backdrop-filter: blur(10px);
+      padding: 0.5rem 1.5rem;
+      border-radius: 30px;
+      font-size: 0.9rem;
+      letter-spacing: 0.1em;
+      margin-bottom: 2.5rem;
+      position: relative;
+      border: 1px solid rgba(255,255,255,0.3);
+    }
+    .doc-cover h1 {
+      font-size: 3rem;
+      font-weight: 800;
+      letter-spacing: 0.1em;
+      margin-bottom: 0.5rem;
+      position: relative;
+      text-shadow: 0 4px 20px rgba(0,0,0,0.15);
+    }
+    .doc-cover .subtitle {
+      font-size: 1.4rem;
+      font-weight: 300;
+      letter-spacing: 0.15em;
+      opacity: 0.95;
+      margin-bottom: 1rem;
+      position: relative;
+    }
+    .doc-cover .slogan {
+      font-size: 1rem;
+      letter-spacing: 0.3em;
+      opacity: 0.9;
+      margin-bottom: 3rem;
+      position: relative;
+    }
+    .doc-cover .meta-grid {
+      display: inline-grid;
+      grid-template-columns: repeat(3, auto);
+      gap: 2rem;
+      background: rgba(255,255,255,0.2);
+      backdrop-filter: blur(10px);
+      padding: 1rem 2.5rem;
+      border-radius: 16px;
+      position: relative;
+      border: 1px solid rgba(255,255,255,0.3);
+    }
+    .doc-cover .meta-item {
+      text-align: center;
+    }
+    .doc-cover .meta-label {
+      font-size: 0.75rem;
+      opacity: 0.8;
+      letter-spacing: 0.1em;
+      margin-bottom: 0.25rem;
+    }
+    .doc-cover .meta-value {
+      font-size: 1.1rem;
+      font-weight: 600;
+    }
+    .doc-cover .doc-version {
+      margin-top: 2rem;
+      font-size: 0.85rem;
+      opacity: 0.7;
+      position: relative;
+    }
+
+    /* 目录 */
+    .toc {
+      background: white;
+      border-bottom: 1px solid var(--rule);
+      padding: 1.5rem 0;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 2px 10px rgba(234,88,12,0.06);
+    }
+    .toc-inner {
+      max-width: var(--max);
+      margin: 0 auto;
+      padding: 0 1.5rem;
+      display: flex;
+      gap: 0.5rem;
+      overflow-x: auto;
+      scrollbar-width: none;
+    }
+    .toc-inner::-webkit-scrollbar { display: none; }
+    .toc a {
+      display: inline-block;
+      padding: 0.4rem 0.9rem;
+      background: var(--bg2);
+      color: var(--accent-dark);
+      text-decoration: none;
+      border-radius: 20px;
+      font-size: 0.85rem;
+      font-weight: 500;
+      white-space: nowrap;
+      transition: all 0.2s;
+      border: 1px solid transparent;
+    }
+    .toc a:hover {
+      background: var(--accent);
+      color: white;
+      border-color: var(--accent);
+    }
+
+    article.page {
+      max-width: var(--max);
+      margin: 0 auto;
+      padding: 2rem 1.5rem 4rem;
+    }
+
+    /* 章节标题 */
+    h2 {
+      color: var(--accent);
+      font-size: 1.6rem;
+      margin: 3rem 0 1.2rem;
+      padding-bottom: 0.7rem;
+      border-bottom: 3px solid var(--accent);
+      display: flex;
+      align-items: center;
+      gap: 0.7rem;
+      font-weight: 700;
+      page-break-after: avoid;
+    }
+    h2:first-child { margin-top: 1rem; }
+    h2 .num {
+      background: linear-gradient(135deg, var(--accent), var(--accent2));
+      color: white;
+      width: 2.4rem;
+      height: 2.4rem;
+      border-radius: 10px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.1rem;
+      flex-shrink: 0;
+      box-shadow: 0 4px 12px rgba(249, 115, 22, 0.3);
+    }
+
+    h3 {
+      color: var(--ink);
+      font-size: 1.2rem;
+      margin: 1.8rem 0 0.8rem;
+      padding-left: 1rem;
+      border-left: 5px solid var(--accent2);
+      font-weight: 600;
+      page-break-after: avoid;
+    }
+
+    h4 {
+      color: var(--accent-dark);
+      font-size: 1.05rem;
+      margin: 1.2rem 0 0.6rem;
+      font-weight: 600;
+    }
+
+    p {
+      margin-bottom: 0.8rem;
+      color: var(--ink-soft);
+    }
+
+    /* 信息卡片 */
+    .info-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1rem;
+      margin: 1.5rem 0;
+    }
+    .info-card {
+      background: white;
+      border-radius: 12px;
+      padding: 1.25rem;
+      border: 1px solid var(--rule);
+      box-shadow: 0 2px 8px rgba(234,88,12,0.05);
+    }
+    .info-card .label {
+      font-size: 0.8rem;
+      color: var(--muted);
+      letter-spacing: 0.05em;
+      margin-bottom: 0.35rem;
+      text-transform: uppercase;
+    }
+    .info-card .value {
+      font-size: 1.15rem;
+      font-weight: 600;
+      color: var(--ink);
+    }
+    .info-card.highlight {
+      background: linear-gradient(135deg, var(--bg2), white);
+      border: 2px solid var(--accent-light);
+    }
+
+    /* 图片展示 */
+    .kv-showcase {
+      margin: 2rem 0;
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 8px 30px rgba(234,88,12,0.15);
+      border: 4px solid white;
+      background: white;
+    }
+    .kv-showcase img {
+      width: 100%;
+      display: block;
+    }
+    .kv-caption {
+      text-align: center;
+      padding: 0.75rem;
+      background: linear-gradient(135deg, var(--bg2), white);
+      font-size: 0.9rem;
+      color: var(--muted);
+      font-weight: 500;
+    }
+    .img-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+      gap: 1.5rem;
+      margin: 2rem 0;
+    }
+    @media (max-width: 900px) {
+      .img-grid { grid-template-columns: 1fr; }
+    }
+
+    /* 时间线 */
+    .timeline {
+      position: relative;
+      margin: 2rem 0;
+    }
+    .timeline::before {
+      content: "";
+      position: absolute;
+      left: 1.3rem;
+      top: 0;
+      bottom: 0;
+      width: 3px;
+      background: linear-gradient(to bottom, var(--accent), var(--orange-bright), var(--gold));
+      border-radius: 2px;
+    }
+    .step-card {
+      position: relative;
+      padding: 1.3rem 1.5rem 1.3rem 4rem;
+      margin-bottom: 1.2rem;
+      background: white;
+      border-radius: 14px;
+      box-shadow: 0 3px 12px rgba(234,88,12,0.07);
+      border: 1px solid var(--rule);
+      page-break-inside: avoid;
+    }
+    .step-card.major {
+      border: 2px solid var(--accent);
+      background: linear-gradient(135deg, #fff7ed 0%, white 100%);
+    }
+    .step-card.major::before {
+      background: linear-gradient(135deg, var(--accent), var(--red)) !important;
+      box-shadow: 0 0 0 4px rgba(234,88,12,0.2);
+      width: 1.3rem !important;
+      height: 1.3rem !important;
+      left: 0.65rem !important;
+      top: 1.4rem !important;
+    }
+    .step-card::before {
+      content: "";
+      position: absolute;
+      left: 0.8rem;
+      top: 1.4rem;
+      width: 1.1rem;
+      height: 1.1rem;
+      background: var(--accent2);
+      border-radius: 50%;
+      border: 3px solid white;
+      box-shadow: 0 0 0 2px var(--accent-light);
+    }
+    .step-header {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 0.6rem;
+      margin-bottom: 0.6rem;
+    }
+    .time-tag {
+      display: inline-block;
+      background: linear-gradient(135deg, var(--accent2), var(--accent));
+      color: white;
+      padding: 0.25rem 0.8rem;
+      border-radius: 20px;
+      font-size: 0.88rem;
+      font-weight: 700;
+      letter-spacing: 0.02em;
+    }
+    .step-card.major .time-tag {
+      background: linear-gradient(135deg, var(--red), var(--accent));
+      font-size: 0.95rem;
+      padding: 0.3rem 1rem;
+    }
+    .duration-tag {
+      display: inline-block;
+      background: var(--bg3);
+      color: var(--accent-dark);
+      padding: 0.15rem 0.5rem;
+      border-radius: 4px;
+      font-size: 0.78rem;
+      font-weight: 600;
+    }
+    .step-title {
+      font-weight: 700;
+      font-size: 1.15rem;
+      color: var(--ink);
+    }
+    .loc-tag {
+      display: inline-block;
+      font-size: 0.85rem;
+      color: var(--muted);
+      background: var(--bg2);
+      padding: 0.15rem 0.6rem;
+      border-radius: 6px;
+      margin-left: auto;
+    }
+    .step-body {
+      font-size: 0.95rem;
+      color: var(--ink-soft);
+      line-height: 1.7;
+    }
+    .step-body p { margin-bottom: 0.6rem; }
+    .step-body p:last-child { margin-bottom: 0; }
+    .leaders-box {
+      margin-top: 0.8rem;
+      background: var(--bg2);
+      padding: 0.7rem 1rem;
+      border-radius: 8px;
+      font-size: 0.9rem;
+    }
+    .leaders-box strong {
+      color: var(--accent);
+    }
+    .leader-tag {
+      display: inline-block;
+      background: linear-gradient(135deg, var(--accent-light), #fdba74);
+      color: var(--accent-dark);
+      padding: 0.15rem 0.6rem;
+      border-radius: 6px;
+      font-size: 0.85rem;
+      margin: 0.15rem 0.15rem;
+      font-weight: 500;
+    }
+    .detail-box {
+      margin-top: 0.8rem;
+      background: linear-gradient(135deg, #fffbeb, var(--gold-light));
+      padding: 0.9rem 1.1rem;
+      border-radius: 8px;
+      font-size: 0.88rem;
+      border-left: 4px solid var(--gold);
+      color: #78350f;
+    }
+    .detail-box strong {
+      color: var(--gold);
+    }
+    .detail-box ul {
+      margin-left: 1.2rem;
+      margin-top: 0.4rem;
+    }
+    .detail-box li {
+      margin-bottom: 0.3rem;
+      line-height: 1.6;
+    }
+    .supplier-note {
+      margin-top: 0.6rem;
+      background: var(--blue-light);
+      padding: 0.7rem 1rem;
+      border-radius: 8px;
+      font-size: 0.85rem;
+      border-left: 4px solid var(--blue);
+      color: #1e3a8a;
+    }
+    .supplier-note strong {
+      color: var(--blue);
+    }
+
+    /* 表格 */
+    .table-wrap {
+      overflow-x: auto;
+      margin: 1.5rem 0;
+      border-radius: 12px;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.05);
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background: white;
+      font-size: 0.9rem;
+    }
+    thead th {
+      background: linear-gradient(135deg, var(--accent), var(--accent2));
+      color: white;
+      padding: 0.9rem 1rem;
+      text-align: left;
+      font-weight: 600;
+      font-size: 0.9rem;
+    }
+    tbody td {
+      padding: 0.8rem 1rem;
+      border-bottom: 1px solid var(--rule);
+      vertical-align: top;
+    }
+    tbody tr:last-child td { border-bottom: none; }
+    tbody tr:nth-child(even) { background: var(--bg2); }
+    td strong { color: var(--accent-dark); }
+    .text-sm { font-size: 0.85rem; color: var(--muted); }
+
+    /* 提示框 */
+    .note-box {
+      border-radius: 12px;
+      padding: 1.2rem 1.5rem;
+      margin: 1.5rem 0;
+    }
+    .note-box.important {
+      background: linear-gradient(135deg, #fef2f2, var(--red-light));
+      border: 2px solid #fca5a5;
+    }
+    .note-box.important h4 {
+      color: var(--red);
+      margin-top: 0;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    .note-box.tip {
+      background: linear-gradient(135deg, #f0fdf4, var(--green-light));
+      border: 2px solid #86efac;
+    }
+    .note-box.tip h4 {
+      color: var(--green);
+      margin-top: 0;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    .note-box ul {
+      margin-left: 1.5rem;
+      margin-top: 0.5rem;
+    }
+    .note-box li {
+      margin-bottom: 0.4rem;
+      line-height: 1.6;
+    }
+
+    /* 检查清单 */
+    .checklist {
+      list-style: none;
+      margin: 1rem 0;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 0.5rem 1.5rem;
+    }
+    .checklist li {
+      padding: 0.5rem 0 0.5rem 2rem;
+      position: relative;
+      font-size: 0.92rem;
+    }
+    .checklist li::before {
+      content: "☑";
+      position: absolute;
+      left: 0;
+      top: 0.45rem;
+      color: var(--accent);
+      font-size: 1.1rem;
+    }
+
+    /* 场地分区 */
+    .zone-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.2rem;
+      margin: 1.5rem 0;
+    }
+    .zone-card {
+      background: white;
+      border-radius: 14px;
+      overflow: hidden;
+      border: 1px solid var(--rule);
+      box-shadow: 0 3px 12px rgba(0,0,0,0.05);
+    }
+    .zone-card-header {
+      padding: 1rem 1.2rem;
+      color: white;
+      font-weight: 700;
+      font-size: 1.05rem;
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+    }
+    .zone-card-header.a { background: linear-gradient(135deg, var(--accent), var(--accent2)); }
+    .zone-card-header.b { background: linear-gradient(135deg, var(--gold), #f59e0b); }
+    .zone-card-header.c { background: linear-gradient(135deg, var(--accent), var(--accent-dark)); }
+    .zone-card-header.d { background: linear-gradient(135deg, var(--gold), #d97706); }
+    .zone-card-body {
+      padding: 1.1rem 1.2rem;
+    }
+    .zone-card-body p {
+      font-size: 0.9rem;
+      margin-bottom: 0.5rem;
+    }
+    .zone-card-body p:last-child { margin-bottom: 0; }
+
+    /* 页脚 */
+    .doc-footer {
+      text-align: center;
+      margin-top: 4rem;
+      padding: 3rem 1.5rem;
+      background: linear-gradient(135deg, var(--bg2), white);
+      border-top: 2px dashed var(--rule);
+    }
+    .doc-footer .blessing {
+      font-size: 1.8rem;
+      font-weight: 800;
+      color: var(--accent);
+      letter-spacing: 0.15em;
+      margin-bottom: 0.5rem;
+    }
+    .doc-footer p {
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+
+    @media print {
+      .toc { display: none; }
+      .doc-cover { page-break-after: always; }
+      h2 { page-break-before: always; }
+      .step-card, .info-card, table, .zone-card { page-break-inside: avoid; }
+      body { font-size: 12pt; }
+    }
+
+    @media (max-width: 768px) {
+      .doc-cover h1 { font-size: 2rem; }
+      .doc-cover .meta-grid { grid-template-columns: 1fr; gap: 0.8rem; }
+      .doc-cover { padding: 3rem 1rem 2.5rem; }
+      article.page { padding: 1.5rem 1rem; }
+      .checklist { grid-template-columns: 1fr; }
+      .step-card { padding: 1rem 1rem 1rem 3.2rem; }
+    }
+  </style>
+<script>document.documentElement.setAttribute('data-trae-theme', "light");window.__TRAE_DISABLE_LEGACY_ADD_TO_CHAT__=true;</script><input type="hidden" id="_o_dbjbempljhcmhlfpfacalomonjpalpko" data-inspect-config="7"><script type="text/javascript" src="chrome-extension://dbjbempljhcmhlfpfacalomonjpalpko/scripts/inspector.js"></script><style data-trae-edit-ui="true" id="trae-previewer-tools-styles">:root,
+[data-trae-theme='dark'] {
+  --trae-bg-base-default: #171717;
+  --trae-bg-menu: #222427;
+  --trae-bg-overlay-l1: rgba(255, 255, 255, 0.04);
+  --trae-bg-overlay-l2: rgba(255, 255, 255, 0.08);
+  --trae-bg-overlay-l3: rgba(255, 255, 255, 0.12);
+  --trae-bg-overlay-l4: rgba(255, 255, 255, 0.16);
+  --trae-bg-invert: #f5f9fe;
+  --trae-bg-invert-hover: #e8ecf0;
+  --trae-bg-invert-active: #dce0e4;
+  --trae-bg-invert-disabled: rgba(224, 226, 242, 0.12);
+  --trae-border-l1: #e0e2f217;
+  --trae-border-l2: rgba(255, 255, 255, 0.12);
+  --trae-border-l3: rgba(255, 255, 255, 0.08);
+  --trae-border-neutral-l3: rgba(229, 229, 229, 0.20);
+  --trae-border-brand: #6a6fff;
+  --trae-text-default: #f5f9fe;
+  --trae-text-default-hover: #f5f9fe;
+  --trae-text-default-active: #f5f9fe;
+  --trae-text-secondary: rgba(245, 249, 254, 0.5);
+  --trae-text-tertiary: rgba(245, 249, 254, 0.4);
+  --trae-text-disabled: #666b75;
+  --trae-text-onaccent: #222427;
+  --trae-icon-default: #f5f9fe;
+  --trae-icon-secondary: rgba(245, 249, 254, 0.5);
+  --trae-icon-brand: #6a6fff;
+  --trae-icon-onaccent: #222427;
+  --trae-status-success: #22c55e;
+  --trae-status-primary: #3b82f6;
+  --trae-status-primary-default: #387bff;
+  --trae-status-primary-surface-l1: rgba(53, 121, 255, 0.18);
+  --trae-status-success-default: #33c192;
+  --trae-status-success-surface-l1: rgba(0, 165, 110, 0.18);
+  --trae-status-error-default: #f65a5a;
+  --trae-status-error-surface-l1: rgba(246, 70, 70, 0.18);
+  --trae-annotation-marker-bg: #4b3fe3;
+  --trae-annotation-marker-text: #ffffff;
+  --trae-annotation-region-border: var(--trae-status-primary-default);
+  --trae-annotation-rect-border: var(--trae-status-error-default);
+  --trae-annotation-arrow-anchor-bg: var(--trae-status-primary-default);
+  --trae-panel-shadow: 0px 6px 24px -1px rgba(0, 0, 0, 0.16);
+  --trae-floating-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.2);
+  --trae-shadow-elevation-50: 0 1px 2px -1px rgba(0, 0, 0, 0.45);
+  --trae-tab-active-shadow: 0px 1px 2px -1px rgba(0, 0, 0, 0.16);
+}
+
+[data-trae-theme='light'] {
+  --trae-bg-base-default: #fafafa;
+  --trae-bg-menu: #ffffff;
+  --trae-bg-overlay-l1: rgba(0, 0, 0, 0.04);
+  --trae-bg-overlay-l2: rgba(0, 0, 0, 0.06);
+  --trae-bg-overlay-l3: rgba(0, 0, 0, 0.08);
+  --trae-bg-overlay-l4: rgba(0, 0, 0, 0.12);
+  --trae-bg-invert: #1f2328;
+  --trae-bg-invert-hover: #32383f;
+  --trae-bg-invert-active: #444d56;
+  --trae-bg-invert-disabled: rgba(115, 115, 115, 0.20);
+  --trae-border-l1: rgba(0, 0, 0, 0.1);
+  --trae-border-l2: rgba(0, 0, 0, 0.12);
+  --trae-border-l3: rgba(0, 0, 0, 0.08);
+  --trae-border-neutral-l3: rgba(115, 115, 115, 0.36);
+  --trae-border-brand: #4b3fe3;
+  --trae-text-default: #1f2328;
+  --trae-text-default-hover: #111214;
+  --trae-text-default-active: #111214;
+  --trae-text-secondary: rgba(31, 35, 40, 0.5);
+  --trae-text-tertiary: rgba(31, 35, 40, 0.4);
+  --trae-text-disabled: #a1a1a1;
+  --trae-text-onaccent: #ffffff;
+  --trae-icon-default: #1f2328;
+  --trae-icon-secondary: rgba(31, 35, 40, 0.5);
+  --trae-icon-brand: #4b3fe3;
+  --trae-icon-onaccent: #ffffff;
+  --trae-status-success: #22c55e;
+  --trae-status-primary: #3b82f6;
+  --trae-status-primary-default: #2f74ff;
+  --trae-status-primary-surface-l1: rgba(47, 116, 255, 0.12);
+  --trae-status-success-default: #15a877;
+  --trae-status-success-surface-l1: rgba(64, 176, 139, 0.12);
+  --trae-status-error-default: #e8463a;
+  --trae-status-error-surface-l1: rgba(232, 70, 58, 0.12);
+  --trae-annotation-marker-bg: #4b3fe3;
+  --trae-annotation-marker-text: #ffffff;
+  --trae-annotation-region-border: var(--trae-status-primary-default);
+  --trae-annotation-rect-border: var(--trae-status-error-default);
+  --trae-annotation-arrow-anchor-bg: var(--trae-status-primary-default);
+  --trae-panel-shadow: 0px 6px 24px -1px rgba(24, 24, 24, 0.06);
+  --trae-floating-shadow: 0px 2px 8px 0px rgba(24, 24, 24, 0.2);
+  --trae-shadow-elevation-50: 0 1px 2px -1px rgba(24, 24, 24, 0.08);
+  --trae-tab-active-shadow: 0px 1px 2px -1px rgba(24, 24, 24, 0.08);
+}
+
+@keyframes trae-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.trae-edit-mode-active body *:not([data-trae-edit-ui]):not([data-trae-edit-ui] *) {
+  transition: none !important;
+  animation-play-state: paused !important;
+}
+
+.trae-browser-inspect-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* stylelint-disable-next-line scale-unlimited/declaration-strict-value -- 独立注入 CSS，无法访问 :root 变量 */
+  z-index: 1400; /* z-layer: fullscreen (1400) */
+  pointer-events: auto;
+  background: transparent;
+}
+
+.trae-browser-inspect-highlight-box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  /* stylelint-disable-next-line scale-unlimited/declaration-strict-value -- 独立注入 CSS，无法访问 :root 变量 */
+  z-index: 1401; /* above overlay */
+  display: none;
+}
+
+.trae-browser-inspect-highlight-tag {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  height: 18px;
+  padding: 0 6px;
+  box-sizing: border-box;
+  border-radius: 4px;
+  background-color: var(--trae-status-success-default);
+  color: var(--trae-text-onaccent);
+  font-size: 12px;
+  font-weight: 400;
+  display: none;
+  align-items: center;
+  /* stylelint-disable-next-line scale-unlimited/declaration-strict-value -- 独立注入 CSS，无法访问 :root 变量 */
+  z-index: 1402; /* above highlight-box */
+}
+
+.trae-browser-inspect-highlight-box-show {
+  display: flex;
+}
+
+.trae-browser-inspect-highlight-tag.trae-browser-inspect-highlight-box-show {
+  display: none;
+}
+
+.trae-browser-inspect-select-button.trae-browser-inspect-highlight-box-show {
+  display: block !important;
+}
+
+.trae-browser-inspect-select-button {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+  /* stylelint-disable-next-line scale-unlimited/declaration-strict-value -- 独立注入 CSS，无法访问 :root 变量 */
+  z-index: 1402; /* above overlay, must receive pointer events */
+}
+
+.trae-browser-inspect-select-highlight-box {
+  background: transparent !important;
+}
+
+.trae-browser-inspect-select-highlight-box .trae-browser-inspect-highlight-tag {
+  background-color: var(--trae-status-success-default);
+}
+
+.trae-add-to-chat-card {
+  display: block;
+  overflow: hidden;
+  background: var(--trae-bg-menu);
+  border: 1px solid var(--trae-border-l1);
+  border-radius: 8px;
+  box-shadow: var(--trae-floating-shadow);
+  transition:
+    width 0.25s cubic-bezier(0.4, 0, 0.2, 1),
+    height 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.trae-add-to-chat-content {
+  position: relative;
+  width: max-content;
+}
+
+.trae-fade-exit {
+  opacity: 0;
+  transition: opacity 0.15s ease-out;
+}
+
+.trae-fade-enter {
+  opacity: 1;
+  transition: opacity 0.2s ease-in;
+}
+
+.trae-buttons-view {
+  display: flex;
+  align-items: center;
+  gap: 0;
+  padding: 4px;
+  background: transparent;
+}
+
+.trae-action-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 4px 8px;
+  background: transparent;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transform: none !important;
+  transition: none !important;
+  animation: none !important;
+}
+
+.trae-action-button:hover {
+  background: var(--trae-bg-overlay-l2);
+}
+
+.trae-action-button:active {
+  background: var(--trae-bg-overlay-l3);
+}
+
+.trae-action-button:focus-visible {
+  outline: 2px solid var(--trae-status-primary);
+  outline-offset: 1px;
+}
+
+.trae-action-button-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 16px;
+  height: 16px;
+  color: var(--trae-icon-default);
+  flex-shrink: 0;
+}
+
+.trae-action-button-title {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-size: 11px;
+  font-weight: 500;
+  line-height: 16px;
+  color: var(--trae-text-default);
+  white-space: nowrap;
+}
+
+.trae-edit-toolbar-button-active {
+  background: var(--trae-status-primary-surface-l1) !important;
+  color: var(--trae-status-primary-default) !important;
+}
+
+.trae-edit-toolbar button[data-action='alignment-dropdown']:hover,
+.trae-edit-toolbar button[data-action='text-align-dropdown']:hover,
+.trae-edit-toolbar button[data-action='font-decrease']:hover,
+.trae-edit-toolbar button[data-action='font-increase']:hover,
+.trae-edit-toolbar button[data-action^='align-']:hover {
+  border-radius: 8px;
+  background: var(--bg-bg-overlay-l1, rgba(115, 115, 115, 0.08)) !important;
+}
+
+.trae-edit-toolbar button[data-action='alignment-dropdown']:active,
+.trae-edit-toolbar button[data-action='text-align-dropdown']:active,
+.trae-edit-toolbar button[data-action='font-decrease']:active,
+.trae-edit-toolbar button[data-action='font-increase']:active,
+.trae-edit-toolbar button[data-action^='align-']:active {
+  border-radius: 8px;
+  background: var(--bg-bg-overlay-l2, rgba(115, 115, 115, 0.12)) !important;
+}
+
+.trae-comment-input {
+  background: transparent;
+  color: var(--trae-text-default);
+  caret-color: var(--trae-text-default);
+}
+
+.trae-comment-input::placeholder {
+  color: var(--trae-text-tertiary);
+}
+
+.trae-edit-panel [data-trae-tooltip] {
+  position: relative;
+}
+
+.trae-edit-panel [data-trae-tooltip]::after {
+  content: attr(data-trae-tooltip);
+  position: absolute;
+  left: 50%;
+  bottom: calc(100% + 8px);
+  z-index: var(--z-max, 9999);
+  padding: 6px 10px;
+  border-radius: 6px;
+  background: var(--bg-bg-invert, var(--trae-bg-invert));
+  color: var(--text-text-onaccent, var(--trae-text-onaccent));
+  box-shadow: var(--trae-floating-shadow);
+  font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'PingFang SC', sans-serif;
+  font-size: 11px;
+  font-weight: 500;
+  line-height: 16px;
+  letter-spacing: 0.039px;
+  white-space: nowrap;
+  pointer-events: none;
+  box-sizing: border-box;
+  opacity: 0;
+  transform: translateX(-50%);
+  visibility: hidden;
+}
+
+.trae-edit-panel [data-trae-tooltip]::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: calc(100% + 5px);
+  z-index: var(--z-max, 9999);
+  width: 8px;
+  height: 4px;
+  background: var(--bg-bg-invert, var(--trae-bg-invert));
+  clip-path: polygon(0 0, 100% 0, 50% 100%);
+  transform: translateX(-50%);
+  pointer-events: none;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.trae-edit-panel [data-trae-tooltip]:hover::after,
+.trae-edit-panel [data-trae-tooltip]:focus-visible::after,
+.trae-edit-panel [data-trae-tooltip]:hover::before,
+.trae-edit-panel [data-trae-tooltip]:focus-visible::before {
+  opacity: 1;
+  visibility: visible;
+}
+
+.trae-comment-btn {
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.15s ease;
+}
+
+.trae-comment-btn:disabled {
+  cursor: not-allowed;
+}
+
+.trae-comment-btn:focus-visible {
+  outline: 2px solid var(--trae-status-primary);
+  outline-offset: 1px;
+}
+
+.trae-comment-btn-primary {
+  background: var(--trae-bg-invert);
+  color: var(--trae-text-onaccent);
+}
+
+.trae-comment-btn-primary:hover:not(:disabled) {
+  background: var(--trae-bg-invert-hover);
+}
+
+.trae-comment-btn-primary:active:not(:disabled) {
+  background: var(--trae-bg-invert-active);
+}
+
+.trae-comment-btn-primary:disabled {
+  background: var(--trae-bg-invert-disabled);
+  color: var(--trae-text-disabled);
+}
+
+.trae-comment-btn-secondary {
+  background: var(--trae-bg-overlay-l2);
+  color: var(--trae-text-default);
+}
+
+.trae-comment-btn-secondary:hover:not(:disabled) {
+  background: var(--trae-bg-overlay-l3);
+}
+
+.trae-comment-btn-secondary:active:not(:disabled) {
+  background: var(--trae-bg-overlay-l4);
+}
+
+.trae-comment-btn-secondary:disabled {
+  background: var(--trae-bg-overlay-l2);
+  color: var(--trae-text-disabled);
+}
+
+.trae-comment-btn-text {
+  background: transparent;
+  color: var(--trae-text-default);
+}
+
+.trae-comment-btn-text:hover:not(:disabled) {
+  border-radius: 8px;
+  background: var(--bg-bg-overlay-l1, var(--trae-bg-overlay-l1));
+  color: var(--trae-text-default-hover);
+}
+
+.trae-comment-btn-text:active:not(:disabled) {
+  border-radius: 8px;
+  background: var(--trae-bg-overlay-l2);
+  color: var(--trae-text-default-active);
+}
+
+.trae-comment-btn-text:disabled {
+  background: transparent;
+  color: var(--trae-text-disabled);
+}
+
+.trae-marking-btn {
+  justify-content: center;
+}
+
+.trae-marking-btn:hover:not(:disabled) {
+  background: var(--trae-bg-overlay-l1) !important;
+}
+
+.trae-marking-btn:active:not(:disabled) {
+  background: var(--trae-bg-overlay-l2) !important;
+}
+
+.trae-marking-btn-active {
+  background: var(--trae-status-primary-surface-l1) !important;
+  color: var(--trae-status-primary-default) !important;
+}
+
+.trae-marking-btn:disabled {
+  color: var(--trae-text-disabled) !important;
+  cursor: not-allowed !important;
+}
+
+.trae-action-button-shortcut {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  color: var(--trae-icon-secondary);
+  flex-shrink: 0;
+}
+
+.trae-shortcut-container {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+
+.trae-shortcut-key {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-size: 11px;
+  font-weight: 500;
+  line-height: 12px;
+  color: var(--trae-icon-secondary);
+}
+
+.trae-add-to-chat-divider {
+  width: 2px;
+  height: 12px;
+  padding: 0 6px;
+  box-sizing: content-box;
+  background-clip: content-box;
+  background-color: var(--trae-border-l2);
+  flex-shrink: 0;
+}
+
+.trae-editor-view {
+  display: flex;
+  flex-direction: column;
+  width: 320px;
+  padding: 8px;
+  background: transparent;
+}
+
+.trae-editor-text-container {
+  display: flex;
+  align-items: center;
+  padding: 8px;
+  background: var(--trae-bg-overlay-l1);
+  border: 1px solid var(--trae-border-l3);
+  border-radius: 4px;
+  gap: 8px;
+}
+
+.trae-editor-textarea {
+  flex: 1;
+  padding: 0 2px;
+  border: none;
+  background: transparent;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 20px;
+  color: var(--trae-text-default);
+  resize: none;
+  outline: none;
+  overflow-y: auto;
+  max-height: 140px;
+}
+
+.trae-editor-textarea::placeholder {
+  color: var(--trae-text-tertiary);
+}
+
+.trae-editor-action-bar {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 4px;
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition:
+    max-height 0.2s ease-out,
+    opacity 0.2s ease-out,
+    margin-top 0.2s ease-out;
+}
+
+.trae-editor-action-bar-visible {
+  max-height: 32px;
+  opacity: 1;
+  margin-top: 8px;
+}
+
+.trae-editor-cancel-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 24px;
+  padding: 0 4px;
+  background: var(--trae-bg-overlay-l2);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.15s ease;
+}
+
+.trae-editor-cancel-button:hover {
+  background: var(--trae-bg-overlay-l3);
+}
+
+.trae-editor-cancel-button:active {
+  background: var(--trae-bg-overlay-l3);
+}
+
+.trae-editor-cancel-button:focus-visible {
+  outline: 2px solid var(--trae-status-primary);
+  outline-offset: 1px;
+}
+
+.trae-editor-cancel-text {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-size: 11px;
+  font-weight: 500;
+  line-height: 16px;
+  color: var(--trae-text-default);
+  white-space: nowrap;
+  padding: 0 4px;
+}
+
+.trae-editor-submit-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 24px;
+  padding: 0 8px;
+  background: var(--trae-bg-invert);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.15s ease;
+}
+
+.trae-editor-submit-button:hover {
+  background: var(--trae-bg-invert-hover);
+}
+
+.trae-editor-submit-button:active {
+  background: var(--trae-bg-invert-active);
+}
+
+.trae-editor-submit-button:focus-visible {
+  outline: 2px solid var(--trae-status-primary);
+  outline-offset: 1px;
+}
+
+.trae-editor-submit-text {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-size: 11px;
+  font-weight: 500;
+  line-height: 16px;
+  color: var(--trae-text-onaccent);
+  white-space: nowrap;
+  padding: 0 4px;
+}
+
+.trae-editor-submit-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 12px;
+  height: 12px;
+  color: var(--trae-icon-onaccent);
+  flex-shrink: 0;
+}
+
+.trae-success-view {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  padding: 0 12px;
+  height: 32px;
+  white-space: nowrap;
+}
+
+.trae-success-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 16px;
+  height: 16px;
+  color: var(--trae-status-success);
+  flex-shrink: 0;
+}
+
+.trae-success-text {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+  color: var(--trae-text-default);
+  user-select: none;
+}
+</style></head><body><input type="hidden" id="_o_dbjbempljhcmhlfpfacalomonjpalpko" data-inspect-config="7"><script type="text/javascript" src="chrome-extension://dbjbempljhcmhlfpfacalomonjpalpko/scripts/inspector.js"></script><script>document.documentElement.setAttribute('data-trae-theme', "light");window.__TRAE_DISABLE_LEGACY_ADD_TO_CHAT__=true;</script><input type="hidden" id="_o_dbjbempljhcmhlfpfacalomonjpalpko" data-inspect-config="7"><script type="text/javascript" src="chrome-extension://dbjbempljhcmhlfpfacalomonjpalpko/scripts/inspector.js"></script><script>document.documentElement.setAttribute('data-trae-theme', "light");window.__TRAE_DISABLE_LEGACY_ADD_TO_CHAT__=true;</script>
+
+
+  <!-- 正式封面 -->
+  <div class="doc-cover">
+    
+    <h1>乔迁大吉</h1>
+    <div class="subtitle">天下秀望京办公区入驻仪式</div>
+    
+    <div class="meta-grid">
+      <div class="meta-item">
+        <div class="meta-label">活动日期</div>
+        <div class="meta-value">2026年8月10日</div>
+      </div>
+      <div class="meta-item">
+        <div class="meta-label">吉时开场</div>
+        <div class="meta-value">11:18</div>
+      </div>
+      <div class="meta-item">
+        <div class="meta-label">活动地点</div>
+        <div class="meta-value">望京3层前台</div>
+      </div>
+    </div>
+    <div class="doc-version" contenteditable="false" style="">市场部企业文化 · 2026年7月</div>
+  </div>
+
+  <!-- 目录导航 -->
+  <nav class="toc">
+    <div class="toc-inner">
+      <a href="#sec1">活动概况</a>
+      <a href="#sec2">视觉设计</a>
+      <a href="#sec3">详细流程</a>
+      <a href="#sec4">领导安排</a>
+      <a href="#sec5">场地布局</a>
+      <a href="#sec6">人员分工</a>
+      <a href="#sec7">物资清单</a>
+      <a href="#sec8">筹备时间表</a>
+      <a href="#sec9">执行SOP</a>
+      <a href="#sec10">应急预案</a>
+    </div>
+  </nav>
+
+  <article class="page">
+
+    <!-- 一、活动概况 -->
+    <section id="sec1">
+      <h2><span class="num">1</span>活动概况</h2>
+
+      <div class="info-grid">
+        <div class="info-card highlight">
+          <div class="label">活动名称</div>
+          <div class="value">天下秀望京办公区入驻仪式</div>
+        </div>
+        <div class="info-card">
+          <div class="label">活动日期</div>
+          <div class="value">2026年8月10日（周一）</div>
+        </div>
+        <div class="info-card highlight">
+          <div class="label">吉时开场</div>
+          <div class="value">11:18 准时开始</div>
+        </div>
+        <div class="info-card">
+          <div class="label">活动地点</div>
+          <div class="value">望京办公楼3层前台区域</div>
+        </div>
+        <div class="info-card">
+          <div class="label">参与人员</div>
+          <div class="value" contenteditable="false" style="">望京全体员工 + 公司领导</div>
+        </div>
+        <div class="info-card">
+          <div class="label">预计时长</div>
+          <div class="value">约75分钟（11:10-12:25）</div>
+        </div>
+        <div class="info-card">
+          <div class="label">活动调性</div>
+          <div class="value">喜庆、温馨、内部家人氛围</div>
+        </div>
+        <div class="info-card">
+          <div class="label">主色调</div>
+          <div class="value">品牌橙色系（与主KV一致）</div>
+        </div>
+      </div>
+
+      <h3>活动核心目标</h3>
+      <ul class="checklist">
+        <li>庆祝天下秀正式入驻望京新办公区，图个好彩头</li>
+        <li>按照中国传统乔迁风俗举行仪式，醒狮旺场、纳福迎祥</li>
+        <li>全体员工共同见证，增强团队归属感和凝聚力</li>
+        <li>流程简洁顺畅，不拖沓，减少员工站立等待时间</li>
+      </ul>
+    </section>
+
+    <!-- 二、视觉设计展示 -->
+    <section id="sec2">
+      <h2><span class="num">2</span>视觉设计展示</h2>
+
+      <h3>主KV设计</h3>
+      <div class="kv-showcase">
+        <img src="./assets/main-kv.jpg" alt="主KV设计 - 乔迁大吉">
+        <div class="kv-caption" contenteditable="false" style="">主视觉设计</div>
+      </div>
+
+      <div class="img-grid">
+        <div>
+          <h3>前台仪式区效果图</h3>
+          <div class="kv-showcase">
+            <img src="./assets/reception-effect.png" alt="前台布置效果图">
+            <div class="kv-caption">3层前台仪式区 · 剪彩/点睛/舞狮主场地</div>
+          </div>
+        </div>
+        <div>
+          <h3>茶歇区玻璃贴</h3>
+          <div class="kv-showcase">
+            <img src="./assets/teabreak-glass.png" alt="茶歇区玻璃贴效果图">
+            <div class="kv-caption">前台左手边玻璃贴 · 茶歇区背景</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="note-box tip">
+        <h4>🎨 视觉说明</h4>
+        <ul>
+          <li>主KV以品牌橙色为主色调，立体"Welcome"艺术字搭配"乔迁大吉"主题字</li>
+          <li>前台背景墙、右侧竖屏、左手边玻璃贴均使用统一主视觉，整体氛围统一</li>
+          <li>前台左侧搭配橙白金色系气球和"乔迁大吉"透明立体字，右侧摆放橙色花艺</li>
+          <li contenteditable="false" style="">所有现场物料均沿用橙色系视觉风格</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- 三、详细流程 -->
+    <section id="sec3">
+      <h2><span class="num">3</span>当天详细流程（分钟级）</h2>
+
+      <p style="margin-bottom:1.5rem;">流程按时间顺序排列，<strong style="color:var(--accent)">标注★为核心环节</strong>，需重点把控。各环节执行细节、人员分工和供应商须知见下方说明。</p>
+
+      <div class="timeline">
+
+        <!-- 1. 暖场 -->
+        <div class="step-card">
+          <div class="step-header">
+            <span class="time-tag">11:00-11:10</span>
+            <span class="duration-tag">10分钟</span>
+            <span class="step-title">现场准备 &amp; 暖场</span>
+            <span class="loc-tag">📍 全场</span>
+          </div>
+          <div class="step-body">
+            <p contenteditable="false" style="">所有工作人员（行政工作人员、主持人、企业文化）、行政礼仪人员、供应商舞狮团队、供应商摄影师到位，做最后检查；音响播放暖场喜庆音乐；茶歇区摆放完成；香槟塔、蛋糕提前就位；仪式道具（金剪、朱砂、托盘、礼花炮等）全部到位检查。</p>
+            <div class="detail-box">
+              <strong>✅ 检查清单：</strong>
+              <ul>
+                <li>音响话筒测试完成（备有备用话筒）</li>
+                <li contenteditable="false" style="">9把金剪、9个托盘、剪彩条幅准备到位</li>
+                <li>朱砂、毛笔、擦手纸巾摆放整齐</li>
+                <li contenteditable="false" style="">礼花炮4-6个分发到位，炮手就位待命</li>
+                <li>舞狮团队道具准备完毕，狮子就位</li>
+                <li>香槟塔搭建稳固，香槟冰镇好</li>
+                <li>蛋糕就位，刀具准备好</li>
+                <li>摄影师、摄像师到位，设备调试完成</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2. 员工领导就位 -->
+        <div class="step-card">
+          <div class="step-header">
+            <span class="time-tag">11:10-11:15</span>
+            <span class="duration-tag">5分钟</span>
+            <span class="step-title">员工及领导就位</span>
+            <span class="loc-tag">📍 3层前台前</span>
+          </div>
+          <div class="step-body">
+            <p contenteditable="false" style="">员工开始陆续到场，在前台周围区域有序站好；行政工作人员引导站位，避免堵塞通道。引导领导们11:15左右到场，在前排站定。</p>
+            <div class="detail-box">
+              <strong>💡 执行要点：</strong>
+              <ul>
+                <li contenteditable="false" style="">行政人员在入口处引导，员工有序站好</li>
+                
+                <li>暖场音乐持续播放，音量适中</li>
+                <li>主持人11:15到位，做好开场准备</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3. 主持人开场 ★ -->
+        <div class="step-card major">
+          <div class="step-header">
+            <span class="time-tag">⭐ 11:18 吉时</span>
+            <span class="duration-tag">约4分钟</span>
+            <span class="step-title">主持人开场 · 介绍领导</span>
+            <span class="loc-tag">📍 3层前台前</span>
+          </div>
+          <div class="step-body">
+            <p><strong>吉时11:18准点开场！</strong>音乐切换、掌声响起，主持人上台致开场词，欢迎各位同事，宣布"天下秀望京办公区入驻仪式正式开始"，隆重介绍到场的各位公司领导。</p>
+            <div class="leaders-box">
+              <strong>介绍领导顺序（按职务排序）：</strong>
+              <span class="leader-tag">李檬</span>
+              <span class="leader-tag">吴长京</span>
+              <span class="leader-tag">邵磊</span>
+              <span class="leader-tag">李剑</span>
+              <span class="leader-tag">申俊</span>
+              <span class="leader-tag">韩晓勇</span>
+              <span class="leader-tag">孙艳英</span>
+              <span class="leader-tag">白若言</span>
+              <span class="leader-tag">袁歆</span>
+            </div>
+            <div class="detail-box">
+              <strong>💡 主持词要点（主持人参考）：</strong>
+              <ul>
+                <li contenteditable="false" style="">开场："各位天下秀的伙伴们，大家中午好！今天是2026年8月10日，在这喜庆的日子里，我们欢聚一堂，共同见证天下秀望京新办公区正式入驻！"</li>
+                <li contenteditable="false" style="">介绍领导：不用太正式隆重，保持轻松亲切的氛围</li>
+                <li>串词："吉时已到！我宣布，天下秀望京办公区入驻仪式，现在开始！"</li>
+              </ul>
+            </div>
+            <div class="supplier-note">
+              <strong>📋 供应商配合：</strong>开场瞬间音响配合喜庆音乐，摄影师抓拍全场画面和领导特写。
+            </div>
+          </div>
+        </div>
+
+        <!-- 4. 领导致辞 -->
+        <div class="step-card">
+          <div class="step-header">
+            <span class="time-tag">11:22-11:32</span>
+            <span class="duration-tag">约10分钟</span>
+            <span class="step-title">领导致辞</span>
+            <span class="loc-tag">📍 3层前台前</span>
+          </div>
+          <div class="step-body">
+            <p>三位领导依次上台致辞，回顾公司发展历程，分享乔迁喜悦，感谢全体员工的辛勤付出，展望在望京新址的美好未来。</p>
+            <div class="leaders-box">
+              <strong>致辞领导及顺序（每人约3分钟）：</strong>
+              <span class="leader-tag">① 李檬</span>
+              <span class="leader-tag">② 吴长京</span>
+              <span class="leader-tag">③ 邵磊</span>
+            </div>
+            <div class="detail-box">
+              <strong>💡 执行要点：</strong>
+              <ul>
+                <li contenteditable="false" style="">行政需提前两天和领导确认发言顺序，提醒每人控制在3分钟左右</li>
+                <li contenteditable="false" style="">提前准备好话筒</li>
+                <li>上一位领导讲完后，主持人简单串词引出下一位</li>
+                <li contenteditable="false" style="">最后一位领导（邵磊）讲完后，主持人自然过渡："感谢邵磊！接下来，让我们用热烈的掌声，有请李檬、吴长京为醒狮点睛！"</li>
+                <li>11:32前务必结束所有致辞，为后续环节留足时间</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- 5. 醒狮点睛 ★ -->
+        <div class="step-card major">
+          <div class="step-header">
+            <span class="time-tag">11:32-11:36</span>
+            <span class="duration-tag">约4分钟</span>
+            <span class="step-title">醒狮点睛</span>
+            <span class="loc-tag">📍 3层前台前</span>
+          </div>
+          <div class="step-body">
+            <p contenteditable="false" style="">祥狮入场，卧在前台前。李檬、吴长京在行政礼仪人员引导下，手持朱砂笔为祥狮点睛。主持人同步念吉祥话术："一点天庭，福星高照；二点眼睛，眼观六路；三点口利，笑口常开；四点铁角，钢筋铁骨；五点耳朵，耳听八方！"点睛完毕，祥狮正式苏醒，伴随锣鼓声腾跃起舞！</p>
+            <div class="leaders-box">
+              <strong>点睛领导：</strong>
+              <span class="leader-tag">李檬</span>
+              <span class="leader-tag">吴长京</span>
+              <span style="color:var(--muted);font-size:0.88rem">（建议每人点一只狮）</span>
+            </div>
+            <div class="detail-box">
+              <strong>💡 执行要点：</strong>
+              <ul>
+                <li>点睛顺序：先点左眼→后点右眼→再点天庭，动作从容不迫</li>
+                <li>礼仪人员提前端好托盘（朱砂、毛笔、擦手湿纸巾），站在领导身侧</li>
+                <li>点睛过程主持人全程配合说吉祥话，调动气氛</li>
+                <li>摄影师重点抓拍：领导拿笔的瞬间、点在狮眼的特写、祥狮苏醒的瞬间</li>
+                <li>点睛完毕后领导退到一旁观看祥狮起舞</li>
+              </ul>
+            </div>
+            <div class="supplier-note">
+              <strong>📋 舞狮团队配合：</strong>点睛前祥狮低头静卧，点睛后随着锣鼓声"苏醒"舞动，先向领导行礼，再开始表演。准备好吉祥对联（可选）。
+            </div>
+          </div>
+        </div>
+
+        <!-- 6. 祥狮表演 -->
+        <div class="step-card">
+          <div class="step-header">
+            <span class="time-tag">11:36-11:41</span>
+            <span class="duration-tag">约5分钟</span>
+            <span class="step-title">祥狮献瑞表演</span>
+            <span class="loc-tag">📍 3层前台前</span>
+          </div>
+          <div class="step-body">
+            <p>醒狮带来精彩的舞狮表演，腾挪跳跃、灵动活泼，为乔迁助兴，为新址纳福。表演过程中祥狮吐出吉祥对联（如"乔迁大吉 大展宏图"），送上祝福，把现场气氛推向高潮，为剪彩做预热。</p>
+            <div class="detail-box">
+              <strong>💡 执行要点：</strong>
+              <ul>
+                <li>舞狮表演控制在5分钟内，精彩紧凑不拖沓</li>
+                <li>提前确认场地：前台区域层高足够、地面平整无障碍物</li>
+                <li>对联吐出后，工作人员可接过对联向全场展示，配合掌声</li>
+                <li>表演结束后，祥狮面向领导和员工行礼，主持人串词进入剪彩环节</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- 7. 剪彩仪式 ★★★ -->
+        <div class="step-card major">
+          <div class="step-header">
+            <span class="time-tag">✂️ 约11:41</span>
+            <span class="duration-tag">约5分钟</span>
+            <span class="step-title">剪彩仪式 · 宣布启用 · 合影</span>
+            <span class="loc-tag">📍 3层前台前</span>
+          </div>
+          <div class="step-body">
+            <p contenteditable="false" style=""><strong>这是仪式的最高潮！</strong>9位领导在礼仪人员引导下走到剪彩位置站好，礼仪人员递上金剪。主持人倒数"3-2-1，剪彩！"，领导们共同剪断条幅，同时礼花齐放、锣鼓喧天、掌声雷动！主持人宣布："天下秀望京新办公区，正式启用！"剪彩完毕，众位领导一起合影留念，记录这一历史性时刻。</p>
+            <div class="leaders-box">
+              <strong>剪彩领导（共9人，提前排好站位）：</strong>
+              <span class="leader-tag">李檬</span>
+              <span class="leader-tag">吴长京</span>
+              <span class="leader-tag">邵磊</span>
+              <span class="leader-tag">李剑</span>
+              <span class="leader-tag">申俊</span>
+              <span class="leader-tag">韩晓勇</span>
+              <span class="leader-tag">孙艳英</span>
+              <span class="leader-tag">白若言</span>
+              <span class="leader-tag">袁歆</span>
+            </div>
+            <div class="detail-box">
+              <strong>💡 执行要点：</strong>
+              <ul>
+                <li contenteditable="false" style=""><strong>站位非常重要！</strong>提前画好站位图，按职务排序中间高两边低，在地面贴好脚位点，礼仪人员引导领导快速站好</li>
+                <li>建议站位（从左到右）：白若言、孙艳英、韩晓勇、申俊、吴长京、<strong style="color:var(--red)">李檬（C位）</strong>、邵磊、李剑、袁歆（最终站位请行政确认）</li>
+                <li>金剪提前检查是否锋利，每把金剪都打开放在托盘上，方便领导拿起</li>
+                <li contenteditable="false" style="">礼花炮手4-6人，站在员工两侧后方，听主持人统一口令齐放，不要提前放</li>
+                <li contenteditable="false" style="">剪彩瞬间音响配合音乐，摄影师连续抓拍（至少拍20张备选）</li>
+                <li>剪彩后合影：先拍领导9人合影，再可邀请核心管理团队一起合影</li>
+              </ul>
+            </div>
+            <div class="supplier-note">
+              <strong>📋 供应商配合：</strong>礼花炮提前检查是否完好；舞狮团队在剪彩时在旁起舞助兴；摄影师多机位抓拍全景+特写。
+            </div>
+          </div>
+        </div>
+
+        <!-- 8. 采青接财 ★ -->
+        <div class="step-card major">
+          <div class="step-header">
+            <span class="time-tag">11:45-11:50</span>
+            <span class="duration-tag">约5分钟</span>
+            <span class="step-title">舞狮采青 · 吐瑞接财</span>
+            <span class="loc-tag">📍 3层前台前</span>
+          </div>
+          <div class="step-body">
+            <p contenteditable="false" style="">剪彩、合影完毕后，祥狮进行传统采青仪式。工作人员将提前准备好的"青"（生菜绑红包）悬挂起来，祥狮跃起叼取生菜（"生菜"谐音"生财"），然后将"青"抛给李檬，李檬接"青"即接"财"，寓意天下秀在新址生财有道、生意兴隆、财源广进！李檬接过后将生菜撕碎向空中轻轻抛洒，寓意"遍地生财"。</p>
+            <div class="leaders-box">
+              <strong>接财领导：</strong>
+              <span class="leader-tag">李檬</span>
+              <span style="color: var(--muted); font-size: 0.88rem;" contenteditable="false">（吴长京站在李檬身旁陪同接福）</span>
+            </div>
+            <div class="detail-box">
+              <strong>💡 执行要点：</strong>
+              <ul>
+                <li contenteditable="false" style="">"青"的准备：新鲜生菜2-3颗，用红绳绑好，中间夹一个给舞狮团队的红包（金额建议吉利数字）</li>
+                <li>悬挂高度：狮头跃起能够到，约2.5-3米高（提前和舞狮团队确认）</li>
+                <li contenteditable="false" style="">李檬接生菜后，可先举起来向全场展示，再象征性撕碎几片撒下（不用太用力，避免撒得到处都是）</li>
+                <li>主持人配合说吉祥话："接财接福，祝天下秀生意兴隆、财源滚滚！"</li>
+                <li contenteditable="false" style="">摄影师抓拍：狮子跃起采青、李檬接青、抛洒生菜的经典瞬间</li>
+              </ul>
+            </div>
+            <div class="supplier-note">
+              <strong>📋 舞狮团队配合：</strong>采青是传统环节，需按规范流程表演；生菜里的红包是给舞狮团队的彩头，采青后自然归舞狮团队。
+            </div>
+          </div>
+        </div>
+
+        <!-- 9. 移步香槟塔 -->
+        <div class="step-card">
+          <div class="step-header">
+            <span class="time-tag">11:50-11:55</span>
+            <span class="duration-tag">约5分钟</span>
+            <span class="step-title">共注香槟塔 · 举杯同庆</span>
+            <span class="loc-tag">📍 前台右手边大屏前</span>
+          </div>
+          <div class="step-body">
+            <p contenteditable="false" style="">采青结束后，主持人引导领导移步至前台右手边大屏区域。李檬、吴长京、邵磊每人手持1瓶香槟，从香槟塔顶部缓缓注入，金色美酒自上而下流淌，寓意天下秀在新址财源滚滚、源远流长、事业步步高升。注酒完成后，三位领导举杯向全体员工示意，全场掌声呼应，共同庆祝这一美好时刻！</p>
+            <div class="leaders-box">
+              <strong>香槟塔领导：</strong>
+              <span class="leader-tag">李檬</span>
+              <span class="leader-tag">吴长京</span>
+              <span class="leader-tag">邵磊</span>
+            </div>
+            <div class="detail-box">
+              <strong>💡 执行要点：</strong>
+              <ul>
+                <li>香槟塔提前搭建在大屏前的桌子上，搭建完成后测试过稳定性</li>
+                <li>香槟提前冰镇，瓶口擦拭干净，准备3-4瓶香槟</li>
+                <li>三位领导从顶部同时缓缓注入，速度不要太快，避免溢出</li>
+                <li contenteditable="false" style="">注完后行政给前排领导分发香槟，领导举杯，主持人引导大家共同举杯庆祝</li>
+                <li>摄影师抓拍香槟流淌、领导举杯的画面</li>
+              </ul>
+            </div>
+            <div class="supplier-note">
+              <strong>📋 供应商配合：</strong>茶歇服务商提前搭建好香槟塔，准备好足够的香槟和香槟杯；注酒时工作人员在旁协助，防止倾倒。
+            </div>
+          </div>
+        </div>
+
+        <!-- 10. 切蛋糕 -->
+        <div class="step-card">
+          <div class="step-header">
+            <span class="time-tag">11:55-12:00</span>
+            <span class="duration-tag">约5分钟</span>
+            <span class="step-title">共切乔迁蛋糕</span>
+            <span class="loc-tag">📍 前台右手边大屏前</span>
+          </div>
+          <div class="step-body">
+            <p contenteditable="false" style="">香槟塔后，工作人员推出乔迁大蛋糕。李檬手持装饰性长刀，在其他领导陪同下共同切下乔迁蛋糕第一刀，分享甜蜜喜悦，寓意天下秀大家庭今后的日子甜甜蜜蜜、团团圆圆、和和美美。切完后众位领导合影留念。</p>
+            <div class="leaders-box">
+              <strong>切蛋糕：</strong>
+              <span class="leader-tag">李檬（主切）</span>
+              <span style="color: var(--muted); font-size: 0.88rem;" contenteditable="false">其他领导站在李檬两侧，可手扶刀柄共同合影</span>
+            </div>
+            <div class="detail-box">
+              <strong>💡 执行要点：</strong>
+              <ul>
+                <li contenteditable="false" style="">大蛋糕做成长方形，上面印主KV画面，有"乔迁大吉"字样，与主题呼应</li>
+                <li>准备一把装饰性长刀，提前擦拭干净</li>
+                <li>仪式性切一刀即可（从中间切下），不用分切</li>
+                <li contenteditable="false" style="">后续由工作人员将蛋糕分切，供员工享用</li>
+                <li>切蛋糕时配合轻快温馨的音乐</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- 11. 狮子转堂 -->
+        <div class="step-card">
+          <div class="step-header">
+            <span class="time-tag">12:00-12:25</span>
+            <span class="duration-tag">约25分钟</span>
+            <span class="step-title">狮子转堂 · 旺场送福</span>
+            <span class="loc-tag">📍 3层、4层办公区及领导办公室</span>
+          </div>
+          <div class="step-body">
+            <p>香槟蛋糕仪式结束后，祥狮在引导人员带领下进入办公区开始"转堂"旺场。祥狮依次进入各领导办公室和开放办公区巡游，在办公室内起舞、拜四角，驱邪纳福，将祥瑞之气带到新址的每个角落。各领导在办公室门口接狮，赠送红包（利是）接福，寓意办公室风生水起、事业兴旺。</p>
+            <div class="detail-box">
+              <strong>💡 转堂路线建议（提前和舞狮团队确认）：</strong>
+              <ul>
+                <li>3层前台出发 → 3层领导办公室（按顺序，每间停留2-3分钟）→ 3层开放办公区（短暂穿行，可在几个重点区域拜一拜）→ 上楼梯/电梯到4层 → 4层领导办公室 → 4层开放办公区 → 转堂结束</li>
+                <li contenteditable="false" style="">行政需提前1-2天通知各位领导：转堂当天请在办公室等候，不要锁门，准备好给舞狮的红包</li>
+                <li contenteditable="false" style="">红包金额建议：每个办公室准备1-2个红包，金额用吉利数字</li>
+                <li contenteditable="false" style="">安排1名熟悉办公区布局的行政工作人员在前面带路引导舞狮团队，控制节奏</li>
+                <li>祥狮进入办公室后：拜四角→在老板桌前/财位前短暂起舞→领导赠红包→祥狮行礼退出</li>
+              </ul>
+            </div>
+            <div class="supplier-note">
+              <strong>📋 舞狮团队配合：</strong>转堂时2只狮子可分头行动或一起走，控制总时长在25分钟内；每间办公室不要停留太久，保持节奏。
+            </div>
+          </div>
+        </div>
+
+        <!-- 12. 茶歇 -->
+        <div class="step-card">
+          <div class="step-header">
+            <span class="time-tag" contenteditable="false" style="">🍰 约12:05起</span>
+            <span class="duration-tag">自由活动</span>
+            <span class="step-title">全员茶歇 · 自由庆祝</span>
+            <span class="loc-tag">📍 前台左手边靠墙玻璃贴前</span>
+          </div>
+          <div class="step-body">
+            <p contenteditable="false" style=""><strong>12:05茶歇区准时开放！</strong>员工无需等转堂结束，即可自由前往茶歇区取用茶点、水果、饮料、香槟、乔迁蛋糕，边吃边聊、自由交流、合影留念，和同事们一起分享乔迁的喜悦。</p>
+            <div class="detail-box">
+              <strong>💡 茶歇建议配置：</strong>
+              <ul>
+                <li contenteditable="false" style="">甜品类：小蛋糕、慕斯杯、曲奇饼干等精致小点心</li>
+                <li>水果类：应季水果拼盘（西瓜、哈密瓜、葡萄、草莓等），干净方便取用</li>
+                <li>饮品类：香槟/气泡酒、可乐雪碧等软饮、矿泉水、咖啡、茶</li>
+                <li>其他：可准备一些"乔迁大吉"主题小糖果、喜饼</li>
+                <li>茶歇台沿墙布置在玻璃贴前方，桌布用橙色或白色，摆台美观</li>
+                <li>准备一次性盘子、叉子、纸巾、杯子，数量按总人数×1.5准备</li>
+                <li contenteditable="false" style="">供应商安排1-2名服务人员：及时补餐、收垃圾、保持桌面整洁</li>
+                <li contenteditable="false" style="">准备拍照小道具：手举牌（"乔迁大吉""我们搬家啦""新起点"等）</li>
+              </ul>
+            </div>
+            <div class="supplier-note">
+              <strong>📋 茶歇服务商：</strong>11:40前所有茶歇布置完成；12:00开始分切蛋糕；12:05茶歇正式开放；全程安排人员服务，及时补充食物和清理垃圾。
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 四、领导安排一览 -->
+    <section id="sec4">
+      <h2><span class="num">4</span>领导参与明细</h2>
+      <p>请提前通知每位领导各自参与的环节，如有调整请及时更新：</p>
+
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th style="width: 145.992px; min-width: 145.992px;">环节</th>
+              <th style="width: 123.244px; min-width: 123.244px;">时间</th>
+              <th style="width: 391.273px; min-width: 391.273px;">参与领导</th>
+              <th style="width:12%">人数</th>
+              <th style="width:18%">备注</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td style="width: 145.992px; min-width: 145.992px;"><strong>领导致辞</strong></td>
+              <td style="width: 123.244px; min-width: 123.244px;">11:22-11:32</td>
+              <td style="width: 391.273px; min-width: 391.273px;">
+                <span class="leader-tag">李檬</span>
+                <span class="leader-tag">吴长京</span>
+                <span class="leader-tag">邵磊</span>
+              </td>
+              <td>3人</td>
+              <td contenteditable="false" style="">每人约3分钟，李檬先讲</td>
+            </tr>
+            <tr>
+              <td style="width: 145.992px; min-width: 145.992px;"><strong>醒狮点睛</strong></td>
+              <td style="width: 123.244px; min-width: 123.244px;">11:32-11:36</td>
+              <td style="width: 391.273px; min-width: 391.273px;">
+                <span class="leader-tag">李檬</span>
+                <span class="leader-tag">吴长京</span>
+              </td>
+              <td>2人</td>
+              <td>每人点一只狮</td>
+            </tr>
+            <tr>
+              <td style="width: 145.992px; min-width: 145.992px;"><strong>✂️ 剪彩仪式</strong></td>
+              <td style="width: 123.244px; min-width: 123.244px;">约11:41</td>
+              <td style="width: 391.273px; min-width: 391.273px;">
+                <span class="leader-tag">李檬</span>
+                <span class="leader-tag">吴长京</span>
+                <span class="leader-tag">邵磊</span>
+                <span class="leader-tag">李剑</span>
+                <span class="leader-tag">申俊</span>
+                <span class="leader-tag">韩晓勇</span>
+                <span class="leader-tag">孙艳英</span>
+                <span class="leader-tag">白若言</span>
+                <span class="leader-tag">袁歆</span>
+              </td>
+              <td>9人</td>
+              <td>提前排站位，贴脚位点</td>
+            </tr>
+            <tr>
+              <td style="width: 145.992px; min-width: 145.992px;"><strong>采青接财</strong></td>
+              <td style="width: 123.244px; min-width: 123.244px;">11:45-11:50</td>
+              <td style="width: 391.273px; min-width: 391.273px;">
+                <span class="leader-tag">李檬</span>
+              </td>
+              <td>1人</td>
+              <td contenteditable="false" style="">吴长京陪同</td>
+            </tr>
+            <tr>
+              <td style="width: 145.992px; min-width: 145.992px;"><strong>香槟塔</strong></td>
+              <td style="width: 123.244px; min-width: 123.244px;">11:50-11:55</td>
+              <td style="width: 391.273px; min-width: 391.273px;">
+                <span class="leader-tag">李檬</span>
+                <span class="leader-tag">吴长京</span>
+                <span class="leader-tag">邵磊</span>
+              </td>
+              <td>3人</td>
+              <td>从顶部同时注入</td>
+            </tr>
+            <tr>
+              <td style="width: 145.992px; min-width: 145.992px;"><strong>切蛋糕</strong></td>
+              <td style="width: 123.244px; min-width: 123.244px;">11:55-12:00</td>
+              <td style="width: 391.273px; min-width: 391.273px;">
+                <span class="leader-tag">李檬（主切）</span>
+              </td>
+              <td>1人+</td>
+              <td>其他领导陪同合影</td>
+            </tr>
+            <tr>
+              <td style="width: 145.992px; min-width: 145.992px;"><strong>狮子转堂</strong></td>
+              <td style="width: 123.244px; min-width: 123.244px;">12:00-12:25</td>
+              <td style="width: 391.273px; min-width: 391.273px;">
+                <span style="color:var(--muted);font-size:0.9rem">各领导在各自办公室接狮、赠红包</span>
+              </td>
+              <td>全体领导</td>
+              <td>提前通知在办公室等候</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="note-box important">
+        <h4>⚠️ 领导提醒事项</h4>
+        <ul>
+          <li contenteditable="false" style="">活动当天建议穿着商务休闲装</li>
+          <li contenteditable="false" style="">11:15前到场</li>
+          <li contenteditable="false" style="">剪彩、点睛、采青、香槟、蛋糕等环节由礼仪人员引导</li>
+          <li contenteditable="false" style="">转堂环节请在办公室等候，行政提前准备好给舞狮的红包（吉利数字即可）</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- 五、场地布局 -->
+    <section id="sec5">
+      <h2><span class="num">5</span>场地布局与动线</h2>
+
+      <div class="zone-grid">
+        <div class="zone-card">
+          <div class="zone-card-header a">A · 主仪式区</div>
+          <div class="zone-card-body">
+            <p><strong>位置：</strong>3层前台前方空地</p>
+            <p><strong>用途：</strong>员工就位、主持人开场、领导致辞、醒狮点睛、祥狮表演、剪彩仪式、合影、采青接财</p>
+            <p><strong>布置：</strong>前台背景墙为主KV"乔迁大吉"，左侧气球+立体字，右侧花艺+竖屏</p>
+          </div>
+        </div>
+        <div class="zone-card">
+          <div class="zone-card-header b">B · 庆祝区</div>
+          <div class="zone-card-body">
+            <p><strong>位置：</strong>前台右手边大屏前</p>
+            <p><strong>用途：</strong>倒香槟塔、切乔迁蛋糕</p>
+            <p><strong>布置：</strong>摆放长桌放置香槟塔和蛋糕，周围留出领导站位空间</p>
+          </div>
+        </div>
+        <div class="zone-card">
+          <div class="zone-card-header c">C · 旺场区</div>
+          <div class="zone-card-body">
+            <p><strong>位置：</strong>3层、4层开放办公区 + 领导办公室</p>
+            <p><strong>用途：</strong>狮子转堂旺场送福</p>
+            <p><strong>路线：</strong>3层领导办公室→3层开放区→4层领导办公室→4层开放区</p>
+          </div>
+        </div>
+        <div class="zone-card">
+          <div class="zone-card-header d">D · 茶歇区</div>
+          <div class="zone-card-body">
+            <p><strong>位置：</strong>前台左手边靠墙（玻璃贴"乔迁大吉"前方）</p>
+            <p><strong>用途：</strong>全员茶歇、自由交流、合影</p>
+            <p><strong>布置：</strong>长桌沿墙摆放，茶点饮品分类摆放，玻璃贴为拍照背景</p>
+          </div>
+        </div>
+      </div>
+
+      <h3>动线说明（减少员工走动）</h3>
+      <ul class="checklist">
+        <li>主仪式区（A区）所有仪式原地进行，员工站着观看不用移动</li>
+        <li>领导移步到B区（香槟塔/蛋糕）时，员工可原地或移步几步观看，不用全部挤过去</li>
+        <li contenteditable="false" style="">12:00领导开始转堂（C区），员工12:05即可前往D区茶歇，自由活动</li>
+        
+      </ul>
+    </section>
+
+    <!-- 六、人员分工 -->
+    <section id="sec6">
+      <h2><span class="num">6</span>工作人员分工表</h2>
+      
+
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th style="width:15%">岗位</th>
+              <th style="width: 173.043px; min-width: 173.043px;">人数</th>
+              <th>主要职责</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>总控/导演</strong></td>
+              <td style="width: 173.043px; min-width: 173.043px;">1人（行政负责人）</td>
+              <td contenteditable="false" style="">整体把控时间流程，提醒主持人和各岗位，处理突发情况，是现场总指挥</td>
+            </tr>
+            <tr>
+              <td><strong>主持人</strong></td>
+              <td style="width: 173.043px; min-width: 173.043px;" contenteditable="false">1人（丹丹）</td>
+              <td>主持全场流程，说串词，配合环节调动气氛，把控节奏（提前准备手卡）</td>
+            </tr>
+            <tr>
+              <td><strong contenteditable="false" style="">礼仪人员</strong></td>
+              <td style="width: 173.043px; min-width: 173.043px;" contenteditable="false">2人（行政）</td>
+              <td>引导领导站位、递金剪/托盘/朱砂笔/红包等道具、引导剪彩站位、协助香槟/蛋糕环节</td>
+            </tr>
+            <tr>
+              <td><strong>礼花炮手</strong></td>
+              <td contenteditable="false" style="width: 173.043px; min-width: 173.043px;">4-6人（市场部）</td>
+              <td contenteditable="false" style="">提前拿到礼花炮，站在指定位置，听主持人口令统一齐放</td>
+            </tr>
+            <tr>
+              <td><strong>音响控制</strong></td>
+              <td style="width: 173.043px; min-width: 173.043px;" contenteditable="false">1人（行政）</td>
+              <td>负责暖场音乐、环节音乐、话筒控制，提前准备好各环节音乐BGM</td>
+            </tr>
+            <tr>
+              <td><strong>摄影摄像</strong></td>
+              <td contenteditable="false" style="width: 173.043px; min-width: 173.043px;">2人（供应商）</td>
+              <td contenteditable="false" style="">1人拍全程视频，1人拍全景照片。<br>东梅负责沟通摄影摄像、审核是否抓拍特写和关键瞬间（点睛、剪彩、采青、合影等）</td>
+            </tr>
+            <tr>
+              <td><strong>舞狮对接</strong></td>
+              <td style="width: 173.043px; min-width: 173.043px;" contenteditable="false">1人（行政）</td>
+              <td>对接舞狮团队，确认到场时间、流程、路线，转堂时带路引导</td>
+            </tr>
+            <tr>
+              <td><strong>茶歇服务</strong></td>
+              <td style="width: 173.043px; min-width: 173.043px;" contenteditable="false">1-2人（供应商）</td>
+              <td>茶歇台布置、食物补充、垃圾清理、蛋糕分切、饮品倒取</td>
+            </tr>
+            <tr>
+              <td><strong>员工引导</strong></td>
+              <td style="width: 173.043px; min-width: 173.043px;" contenteditable="false">1人（行政）</td>
+              <td>引导员工站位、维持秩序、解答问题、引导转场方向</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- 七、物资清单 -->
+    <section id="sec7">
+      <h2><span class="num">7</span>物资准备清单</h2>
+      <p>分为"公司自备"和"供应商提供"两类，提前清点确认：</p>
+
+      <h3>一、仪式道具类</h3>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th style="width: 288.004px; min-width: 288.004px;">物品</th>
+              <th>数量</th>
+              <th>负责方</th>
+              <th>备注</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td contenteditable="false" style="width: 288.004px; min-width: 288.004px;">剪彩条幅套装（含条幅、红绸、托盘）</td>
+              <td>1套（9人位）</td>
+              <td>活动供应商</td>
+              <td>红色/橙色系，与主题匹配</td>
+            </tr>
+            <tr>
+              <td style="width: 288.004px; min-width: 288.004px;">金剪</td>
+              <td>9把</td>
+              <td>活动供应商</td>
+              <td>提前检查是否锋利</td>
+            </tr>
+            <tr>
+              <td style="width: 288.004px; min-width: 288.004px;">礼花炮</td>
+              <td>6-8支</td>
+              <td contenteditable="false" style="">活动供应商</td>
+              <td>旋转式，安全可靠</td>
+            </tr>
+            <tr>
+              <td style="width: 288.004px; min-width: 288.004px;">朱砂、毛笔、托盘</td>
+              <td>1套</td>
+              <td contenteditable="false" style="">活动供应商</td>
+              <td>点睛用</td>
+            </tr>
+            <tr>
+              <td style="width: 288.004px; min-width: 288.004px;">擦手湿纸巾/纸巾</td>
+              <td>若干</td>
+              <td contenteditable="false" style="">行政自备</td>
+              <td>点睛后领导擦手</td>
+            </tr>
+            <tr>
+              <td style="width: 288.004px; min-width: 288.004px;" contenteditable="false">生菜</td>
+              <td>2-3颗</td>
+              <td contenteditable="false" style="">行政自备</td>
+              <td>新鲜饱满，用红绳绑好</td>
+            </tr>
+            <tr>
+              <td style="width: 288.004px; min-width: 288.004px;">红包（利是封）</td>
+              <td contenteditable="false" style="">若干</td>
+              <td contenteditable="false" style="">行政自备</td>
+              <td contenteditable="false" style="">橙色/红色系，可印公司logo；生菜里1个+各领导办公室若干</td>
+            </tr>
+            <tr>
+              <td style="width: 288.004px; min-width: 288.004px;">剪彩脚位点贴纸</td>
+              <td>9个</td>
+              <td contenteditable="false" style="">活动供应商</td>
+              <td>彩色胶带或圆形贴纸，标记领导站位</td>
+            </tr>
+            <tr>
+              <td style="width: 288.004px; min-width: 288.004px;">主持人手卡</td>
+              <td>1份</td>
+              <td contenteditable="false" style="">主持人自备</td>
+              <td>印流程和串词要点</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h3>二、氛围布置类</h3>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th style="width: 217.607px; min-width: 217.607px;">物品</th>
+              <th style="width: 126.854px; min-width: 126.854px;">数量</th>
+              <th style="width: 219.486px; min-width: 219.486px;">负责方</th>
+              <th>备注</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td contenteditable="false" style="width: 217.607px; min-width: 217.607px;">主KV背景板</td>
+              <td style="width: 126.854px; min-width: 126.854px;">1套</td>
+              <td contenteditable="false" style="width: 219.486px; min-width: 219.486px;">活动供应商</td>
+              <td contenteditable="false" style="">前台背景墙+左侧玻璃贴</td>
+            </tr>
+            <tr>
+              <td style="width: 217.607px; min-width: 217.607px;">气球装饰</td>
+              <td style="width: 126.854px; min-width: 126.854px;">1套</td>
+              <td style="width: 219.486px; min-width: 219.486px;">活动供应商</td>
+              <td>橙+白+金配色，与效果图一致，前台左侧</td>
+            </tr>
+            <tr>
+              <td contenteditable="false" style="width: 217.607px; min-width: 217.607px;">"乔迁大吉"盒子堆头</td>
+              <td style="width: 126.854px; min-width: 126.854px;">1组</td>
+              <td style="width: 219.486px; min-width: 219.486px;">活动供应商</td>
+              <td contenteditable="false" style="">与效果图一致</td>
+            </tr>
+            <tr>
+              <td style="width: 217.607px; min-width: 217.607px;">橙色系花艺</td>
+              <td style="width: 126.854px; min-width: 126.854px;">1组</td>
+              <td style="width: 219.486px; min-width: 219.486px;">活动供应商</td>
+              <td>前台右侧，与效果图一致</td>
+            </tr>
+            
+            <tr>
+              <td style="width: 217.607px; min-width: 217.607px;">拍照手举牌</td>
+              <td contenteditable="false" style="width: 126.854px; min-width: 126.854px;">4个</td>
+              <td contenteditable="false" style="width: 219.486px; min-width: 219.486px;">活动供应商</td>
+              <td contenteditable="false" style="">"乔迁大吉""我们搬家啦""新起点新未来"“天下秀LOGO”等</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h3>三、餐饮茶歇类</h3>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>物品</th>
+              <th>数量</th>
+              <th>负责方</th>
+              <th>备注</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>乔迁主题大蛋糕</td>
+              <td>1个</td>
+              <td>茶歇供应商</td>
+              <td contenteditable="false" style="">"乔迁大吉"主KV</td>
+            </tr>
+            <tr>
+              <td>香槟/气泡酒</td>
+              <td contenteditable="false" style="">6-8瓶</td>
+              <td contenteditable="false" style="">茶歇供应商</td>
+              <td contenteditable="false" style="">含香槟塔用3-4瓶，茶歇饮用3-4瓶</td>
+            </tr>
+            <tr>
+              <td>香槟塔（杯塔）</td>
+              <td>1座</td>
+              <td>茶歇供应商</td>
+              <td>5-7层，提前搭建并测试稳固性</td>
+            </tr>
+            <tr>
+              <td>香槟杯</td>
+              <td contenteditable="false" style="">按人数</td>
+              <td>茶歇供应商</td>
+              <td>含塔上用杯+茶歇饮用杯</td>
+            </tr>
+            <tr>
+              <td>精致小点心/蛋糕</td>
+              <td>按人数</td>
+              <td>茶歇供应商</td>
+              <td>单份小份，方便取用</td>
+            </tr>
+            <tr>
+              <td>水果拼盘</td>
+              <td>若干</td>
+              <td>茶歇供应商</td>
+              <td>应季水果，切好方便取用</td>
+            </tr>
+            <tr>
+              <td>软饮（可乐/雪碧/果汁/矿泉水）</td>
+              <td>若干</td>
+              <td>茶歇供应商</td>
+              <td>满足不喝酒的同事需求</td>
+            </tr>
+            <tr>
+              <td>咖啡、茶</td>
+              <td>若干</td>
+              <td>茶歇供应商</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>一次性餐具（盘、叉、杯、纸巾）</td>
+              <td contenteditable="false" style="">按人数</td>
+              <td>茶歇供应商</td>
+              <td contenteditable="false" style=""><br></td>
+            </tr>
+            <tr>
+              <td>切蛋糕长刀</td>
+              <td>1把</td>
+              <td>茶歇供应商</td>
+              <td>装饰性长刀，仪式用</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h3>四、设备类</h3>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>物品</th>
+              <th>数量</th>
+              <th>负责方</th>
+              <th>备注</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>音响设备+调音台</td>
+              <td>1套</td>
+              <td contenteditable="false" style="">行政/IT</td>
+              <td>提前1天调试</td>
+            </tr>
+            <tr>
+              <td>无线话筒</td>
+              <td>至少2支（+1支备用）</td>
+              <td>行政/IT</td>
+              <td>确认电池充足</td>
+            </tr>
+            
+            <tr>
+              <td>背景音乐BGM歌单</td>
+              <td>1份</td>
+              <td contenteditable="false" style="">企业文化</td>
+              <td>暖场音乐、喜庆音乐、震撼剪彩音乐、轻松茶歇音乐</td>
+            </tr>
+            
+          </tbody>
+        </table>
+      </div>
+
+      <h3>五、舞狮团队提供</h3>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>物品/服务</th>
+              <th>备注</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>醒狮2只（+狮队人员）</td>
+              <td contenteditable="false" style=""><br></td>
+            </tr>
+            <tr>
+              <td>锣鼓乐队</td>
+              <td>点睛、表演、剪彩、采青、转堂全程配乐</td>
+            </tr>
+            <tr>
+              <td>点睛用朱砂+毛笔+托盘</td>
+              <td>如舞狮团队提供则不用自备</td>
+            </tr>
+            <tr>
+              <td>吉祥对联（吐幅）</td>
+              <td>如"乔迁大吉 生意兴隆"等吉祥语</td>
+            </tr>
+            <tr>
+              <td>全程服务</td>
+              <td>点睛→表演→采青→转堂旺场，全流程配合</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- 八、筹备时间表 -->
+    <section id="sec8">
+      <h2><span class="num">8</span>筹备时间表（倒排）</h2>
+
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th style="width:18%">时间</th>
+              <th>事项</th>
+              <th style="width:18%">负责人</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>T-7天前</strong></td>
+              <td>
+                <ul style="margin-left:1.2rem">
+                  
+                  
+                  <li contenteditable="false" style="">确定主持人、工作人员分工</li>
+                  <li contenteditable="false" style="">确定参与领导名单，通知领导预留时间<div><ul style="margin: 0px 0px 0px 1.2rem; background-color: rgb(255, 247, 237);"></ul></div></li>
+                </ul>
+              </td>
+              <td contenteditable="false" style="">行政</td>
+            </tr>
+            <tr>
+              <td><strong>T-5天前</strong></td>
+              <td>
+                <ul style="margin-left:1.2rem">
+                  <li>主KV、玻璃贴、背景板等视觉物料制作安装完成</li>
+                  <li contenteditable="false" style="">和主持人沟通流程和串词</li>
+                  <li>和舞狮团队确认流程、路线、到场时间</li>
+                  <li>和茶歇供应商确认菜单、数量、布置方案</li>
+                  <li>采购红包、纸巾、小道具等自备物资</li>
+                </ul>
+              </td>
+              <td contenteditable="false" style="">行政和企业文化</td>
+            </tr>
+            <tr>
+              <td><strong>T-2天前</strong></td>
+              <td>
+                <ul style="margin-left:1.2rem">
+                  <li>再次邮件/消息通知全体员工活动时间地点</li>
+                  <li>再次提醒各位领导活动流程和各自参与环节</li>
+                  <li>确认所有供应商到场时间和对接人</li>
+                  <li>工作人员开一次筹备会，明确分工</li>
+                  <li>准备好主持人手卡、流程表、领导站位图</li>
+                </ul>
+              </td>
+              <td contenteditable="false" style="">行政</td>
+            </tr>
+            <tr>
+              <td><strong>T-1天（8月9日）</strong></td>
+              <td>
+                <ul style="margin-left:1.2rem">
+                  <li>下午：供应商进场布置（气球、立体字、花艺等）</li>
+                  <li>下午：IT调试音响、话筒、背景音乐</li>
+                  <li>下午：香槟塔、蛋糕台、茶歇区桌子摆放到位</li>
+                  <li>傍晚：最终检查所有布置，确认物资全部到位</li>
+                  <li>再次提醒所有工作人员和供应商第二天到场时间</li>
+                  <li contenteditable="false" style="">给各领导办公室准备好红包</li>
+                </ul>
+              </td>
+              <td contenteditable="false" style="">行政和企业文化</td>
+            </tr>
+            <tr>
+              <td><strong contenteditable="false" style="">当天 9:30</strong></td>
+              <td>
+                <ul style="margin-left:1.2rem">
+                  <li contenteditable="false" style="">所有工作人员到场，做最终检查</li>
+                  <li>再次测试音响话筒</li>
+                </ul>
+              </td>
+              <td contenteditable="false" style="">全体工作人员</td>
+            </tr>
+            <tr>
+              <td><strong>当天 10:00</strong></td>
+              <td>
+                <ul style="margin-left:1.2rem">
+                  <li>舞狮团队到场，准备道具，热身</li>
+                  <li>茶歇供应商到场布置，摆放茶点</li>
+                  <li>香槟搭建完成，香槟冰镇</li>
+                  <li>摄影摄像到场，试拍角度</li>
+                  <li>礼仪人员到场，熟悉流程和站位</li>
+                </ul>
+              </td>
+              <td contenteditable="false" style="">供应商</td>
+            </tr>
+            <tr>
+              <td><strong>当天 10:40</strong></td>
+              <td>
+                <ul style="margin-left:1.2rem">
+                  <li contenteditable="false" style="">所有人员就位，做最后一次全流程检查</li>
+                  <li>礼花炮分发到炮手手中，告知齐放口令</li>
+                  <li>暖场音乐开始播放</li>
+                </ul>
+              </td>
+              <td contenteditable="false" style="">行政和企业文化</td>
+            </tr>
+            <tr>
+              <td><strong>当天 11:00</strong></td>
+              <td>暖场开始，准备迎接员工和领导</td>
+              <td>全体工作人员</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- 九、各环节执行SOP -->
+    <section id="sec9">
+      <h2><span class="num">9</span>关键环节执行SOP</h2>
+
+      <h3>✂️ 剪彩环节SOP</h3>
+      <ol style="margin-left:1.5rem; margin-bottom:1rem; line-height:1.8; font-size:0.95rem; color:var(--ink-soft);">
+        <li>祥狮表演最后时刻，礼仪人员悄悄上前引导9位剪彩领导按站位图站好</li>
+        <li>每两位领导之间站一位礼仪人员，手托托盘，托盘上放一把金剪</li>
+        <li>领导站定后，主持人串词："接下来，让我们有请众位领导为天下秀望京新址剪彩！"</li>
+        <li>主持人倒数："让我们一起倒计时：3——2——1——剪彩！"</li>
+        <li contenteditable="false" style="">领导们同时剪断条幅，礼花炮手听口令齐放礼花，锣鼓声起，掌声响起</li>
+        <li>主持人宣布："我宣布，天下秀望京新办公区，正式启用！"（音乐推到最大）</li>
+        <li>掌声持续10-15秒，祥狮在旁起舞助兴</li>
+        <li>主持人引导领导合影："请众位领导向前一步，看镜头，让我们记录下这一历史性时刻！"</li>
+        <li>摄影师连拍多张，先9位领导合影，再邀请其他高管一起合影</li>
+      </ol>
+
+      <h3>🦁 点睛环节SOP</h3>
+      <ol style="margin-left:1.5rem; margin-bottom:1rem; line-height:1.8; font-size:0.95rem; color:var(--ink-soft);">
+        <li>领导致辞结束后，祥狮在锣鼓声中入场，卧在前台前</li>
+        <li contenteditable="false" style="">礼仪人员端托盘（朱砂+毛笔+湿纸巾）引导李檬、吴长京上前</li>
+        <li>主持人念吉祥话术，每念一句，领导点一个部位</li>
+        <li>点睛顺序：一点天庭→二点左眼→三点右眼→四点口利→五点耳朵（具体按舞狮团队指导）</li>
+        <li>点睛完毕，礼仪人员递上湿纸巾给领导擦手</li>
+        <li>锣鼓声大作，祥狮"苏醒"，摇头摆尾开始起舞，先向领导行礼</li>
+        <li>领导退到一旁观看祥狮表演</li>
+      </ol>
+
+      <h3>📸 摄影必拍清单</h3>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>环节</th>
+              <th>必拍画面</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>开场前</td>
+              <td>现场空镜（前台布置、气球、花艺、茶歇区、玻璃贴）、员工入场笑脸</td>
+            </tr>
+            <tr>
+              <td>主持人开场</td>
+              <td>主持人全身、领导席全景、员工反应</td>
+            </tr>
+            <tr>
+              <td>领导致辞</td>
+              <td>每位领导讲话特写、听众全景</td>
+            </tr>
+            <tr>
+              <td contenteditable="false" style="">醒狮点睛&nbsp;</td>
+              <td>领导拿笔特写、朱砂点在狮眼的瞬间、祥狮苏醒瞬间</td>
+            </tr>
+            <tr>
+              <td contenteditable="false" style="">剪彩仪式&nbsp;</td>
+              <td>领导剪彩瞬间（多角度连拍）、礼花齐放全景、领导合影（多拍）</td>
+            </tr>
+            <tr>
+              <td contenteditable="false" style="">采青接财&nbsp;</td>
+              <td contenteditable="false" style="">祥狮跃起采青、李檬接青瞬间、抛洒生菜瞬间</td>
+            </tr>
+            <tr>
+              <td>香槟塔</td>
+              <td>香槟流淌特写、领导举杯</td>
+            </tr>
+            <tr>
+              <td contenteditable="false" style="">切蛋糕</td>
+              <td>领导共同切蛋糕第一刀、合影</td>
+            </tr>
+            <tr>
+              <td>狮子转堂</td>
+              <td>祥狮进入办公室、领导赠红包互动</td>
+            </tr>
+            <tr>
+              <td>茶歇&amp;自由合影</td>
+              <td contenteditable="false" style="">员工开心聊天、拿茶点、各种合影（领导和员工合影、部门合影）</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- 十、应急预案 -->
+    <section id="sec10">
+      <h2><span class="num">10</span>应急预案 &amp; 注意事项</h2>
+
+      <div class="note-box important">
+        <h4>⚠️ 应急预案</h4>
+        <ul>
+          <li><strong>话筒故障/没声音：</strong>备有至少1支备用无线话筒，IT人员在旁随时更换；如全部失灵，主持人提高嗓门主持，大家靠拢一些</li>
+          <li><strong>时间延误：</strong>总控人员灵活把控，如果某个环节超时，适当缩短舞狮表演时间或主持人串词精简，核心环节（剪彩）不要赶但也不要拖太久</li>
+          <li><strong>香槟塔倾倒：</strong>提前搭建稳固并测试，旁边准备抹布；如真的倾倒，主持人灵活圆场："岁岁平安！财源滚滚挡都挡不住！"工作人员快速清理</li>
+          <li><strong>领导临时不能到场：</strong>提前准备好替补方案，剪彩人数可灵活调整（8人也可），主持人介绍时跳过即可</li>
+          
+          
+          
+        </ul>
+      </div>
+
+      <div class="note-box tip">
+        <h4>💡 温馨提示 &amp; 注意事项</h4>
+        <ul>
+          <li contenteditable="false" style=""><strong>关于站立：</strong>全程站立约50分钟（11:15-12:05）</li>
+          <li contenteditable="false" style=""><strong>关于拍照：</strong>仪式进行中大家可以用手机拍照，但不要挤到前排影响摄影师和仪式进行</li>
+          <li><strong>关于茶歇：</strong>12:05茶歇开放后大家有序取用，不要拥挤，食物管够；香槟可适量饮用，下午还要工作</li>
+          <li contenteditable="false" style=""><strong>关于红包：</strong>生菜里的红包是给舞狮团队的彩头，不是给员工准备的；转堂的红包由行政提前准备好</li>
+          <li><strong>关于清洁：</strong>活动结束后行政和保洁一起快速清理现场，恢复办公区整洁</li>
+          <li><strong>活动结束后：</strong>当天挑选好的照片发全员群/公司群，分享喜悦；可做一篇简单的公众号/内网推文回顾</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- 结尾祝福 -->
+    <div class="doc-footer">
+      <div class="blessing" contenteditable="false" style="">乔迁大吉</div>
+      
+      <p style="margin-top: 0.5rem; font-size: 0.85rem; max-width: 500px; margin-left: auto; margin-right: auto;" contenteditable="false">
+        新空间 · 新起点 · 新未来<br></p>
+      <p style="margin-top: 2rem; font-size: 0.8rem; opacity: 0.6;" contenteditable="false">市场部企业文化 · 2026年7月</p>
+    </div>
+
+  </article>
+
+
+<div data-trae-edit-ui="true"></div></body></html>
